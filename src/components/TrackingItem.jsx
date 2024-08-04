@@ -1,18 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import Roundiv from "./RoundDiv";
 import { twMerge } from "tailwind-merge";
 
 const TrackingItem = ({ ...props }) => {
+    const [type, setType] = useState(props.index);
+
+    const colorMap = [
+        {
+            Work: ["bg-red-l", "images/icon-work.svg"],
+        },
+        {
+            Play: ["bg-blue-soft", "images/icon-play.svg"],
+        },
+        {
+            Study: ["bg-red-l-2", "images/icon-study.svg"],
+        },
+        {
+            Exercise: ["bg-lime", "images/icon-exercise.svg"],
+        },
+        {
+            Social: ["bg-violet", "images/icon-social.svg"],
+        },
+        {
+            "Self Care": ["bg-orange-soft", "images/icon-self-care.svg"],
+        },
+    ];
+
+    const colorClass = colorMap[props.index][props.title][0] || "";
+    const colorImg = colorMap[props.index][props.title][1] || "";
+
     return (
         <article className={"relative mt-12 "} {...props}>
             <Roundiv
                 className={twMerge(
                     "absolute left-0 w-full h-full overflow-hidden -top-12 ",
-                    props.bg
+                    colorClass
                 )}
             >
                 <img
-                    src={`/images/icon-${props.id}.svg`}
+                    src={colorImg}
                     alt=""
                     className="absolute -top-2 right-5"
                 />

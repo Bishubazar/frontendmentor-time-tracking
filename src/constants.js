@@ -1,6 +1,5 @@
 var data = [
     {
-        id: "work",
         title: "Work",
         timeframes: {
             daily: {
@@ -18,7 +17,6 @@ var data = [
         },
     },
     {
-        id: "play",
         title: "Play",
         timeframes: {
             daily: {
@@ -36,7 +34,6 @@ var data = [
         },
     },
     {
-        id: "study",
         title: "Study",
         timeframes: {
             daily: {
@@ -54,7 +51,6 @@ var data = [
         },
     },
     {
-        id: "exercise",
         title: "Exercise",
         timeframes: {
             daily: {
@@ -72,7 +68,6 @@ var data = [
         },
     },
     {
-        id: "social",
         title: "Social",
         timeframes: {
             daily: {
@@ -90,7 +85,6 @@ var data = [
         },
     },
     {
-        id: "self-care",
         title: "Self Care",
         timeframes: {
             daily: {

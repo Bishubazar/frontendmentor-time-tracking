@@ -44,19 +44,11 @@ function App() {
                     return (
                         <TrackingItem
                             key={index}
-                            id={el.id}
-                            bg={
-                                (el.id === "work" && "bg-red-l") ||
-                                (el.id === "play" && "bg-blue-soft") ||
-                                (el.id === "study" && "bg-red-l-2") ||
-                                (el.id === "exercise" && "bg-lime") ||
-                                (el.id === "social" && "bg-violet") ||
-                                (el.id === "self-care" && "bg-orange-soft")
-                            }
+                            index={index}
                             title={el.title}
                             current={
                                 (time === "Daily" &&
-                                    el.timeframes.daily.current) ||
+                                    el.timeframes.day.current) ||
                                 (time === "Weekly" &&
                                     el.timeframes.weekly.current) ||
                                 (time === "Monthly" &&

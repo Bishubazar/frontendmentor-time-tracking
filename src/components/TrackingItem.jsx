@@ -45,7 +45,7 @@ const TrackingItem = ({ ...props }) => {
             </Roundiv>
             <Roundiv className="w-full h-full overflow-hidden">
                 <button className="relative flex flex-col gap-2 sm:gap-5 justify-between w-full h-full p-8 sm:p-6  px-8 duration-75 bg-blue-dark hover:bg-[#34397b]">
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between w-full">
                         <h1 className="text-xl sm:text-base">{props.title}</h1>
 
                         <img
